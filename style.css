@@ -39,8 +39,8 @@ header {
 .text > button {
   margin-top: 1.5rem;
   border: none;
-  background: hsl(300, 69%, 71%);
-  color: #fff;
+  background: #fff;
+  color: hsl(257, 40%, 49%);
   width: 11rem;
   padding: 0.9rem 2.5rem;
   border-radius: 25px;
@@ -48,10 +48,14 @@ header {
   box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 10px;
   cursor: pointer;
 }
+.text > button:hover {
+  background: hsl(300, 69%, 71%);
+  color: #fff;
+}
 .contact > svg {
-  width: 23px;
-  height: 23px;
-  padding: 5px;
+  width: 33px;
+  height: 33px;
+  padding: 7px;
   border-radius: 50px;
   border: 1px solid #fff;
   margin-left: 6px;
@@ -63,8 +67,43 @@ header {
 .contact {
   float: right;
 }
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  display: inline-block;
+}
+.attribution a {
+  font-size: 11px;
+  color: hsl(228, 3%, 72%);
+}
 @media screen and (max-width: 414px) {
   body {
     background-image: url('./images/bg-mobile.svg');
+    margin: 2.3rem;
+  }
+  .logo {
+    width: 8rem;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .text {
+    margin-left: 0;
+    width: 300px;
+    text-align: center;
+  }
+  .text > header {
+    font-size: 25px;
+    margin-bottom: 0.7rem;
+  }
+  .text > button {
+    width: 14rem;
+  }
+  footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    height: 100px;
+    margin-top: 1rem;
   }
 }
