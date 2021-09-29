@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -32,6 +33,9 @@ header {
   margin-top: 2.7rem;
   margin-bottom: 1.5rem;
 }
+.text > p {
+  line-height: 25px;
+}
 .text > button {
   margin-top: 1.5rem;
   border: none;
@@ -43,6 +47,21 @@ header {
 
   box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 10px;
   cursor: pointer;
+}
+.contact > svg {
+  width: 23px;
+  height: 23px;
+  padding: 5px;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  margin-left: 6px;
+}
+.contact > svg:hover {
+  border: 1px solid #fd52c2;
+  fill: #fd52c2;
+}
+.contact {
+  float: right;
 }
 @media screen and (max-width: 414px) {
   body {
